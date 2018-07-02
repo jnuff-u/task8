@@ -37,11 +37,7 @@
         <property name="serviceName" value="studentServiceB"/>
         <property name="service" ref="studentServiceImpl"/>
         <property name="serviceInterface" value="com.stu.service.StudentService"/>
-        <!--<property name="registryHost"  value="127.0.0.1" />-->
-        <!--&lt;!&ndash;暴露发现服务&ndash;&gt;-->
-        <!--registryPort 服务注册端口。默认为1099-->
         <property name="registryPort" value="1099" />
-        <!--服务端口-->
         <property name="servicePort" value="1089" />
     </bean>
 ```
