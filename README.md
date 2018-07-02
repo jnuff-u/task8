@@ -32,7 +32,7 @@
 **StuServer**
 >student服务端 远程服务
 ```
-<!--服务端口-->
+<!--student 远程服务 端口-->
 <bean id="studentService" class="org.springframework.remoting.rmi.RmiServiceExporter">
         <property name="serviceName" value="studentServiceB"/>
         <property name="service" ref="studentServiceImpl"/>
@@ -50,7 +50,7 @@
 >user服务端 远程服务
 
 ```
-<!--服务端口-->
+<!--user 远程服务端口-->
 <bean id="userService" class="org.springframework.remoting.rmi.RmiServiceExporter" >
         <property name="serviceName" value="userServiceB"/>
         <property name="service" ref="userServiceImpl"/>
