@@ -1,5 +1,6 @@
 package test.com.stu.service.impl; 
 
+import com.stu.controller.RmiService;
 import com.stu.service.StudentService;
 import com.stu.service.UserService;
 import com.stu.service.impl.StudentServiceImpl;
@@ -54,12 +55,15 @@ public void testFindAll() throws Exception {
 @Test
 public void testFindByID() throws Exception { 
 //TODO: Test goes here...
+//
+//    ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationcontext.xml");
+//    StudentService studentService = (StudentService) applicationContext.getBean("studentServer");
 
-    ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationcontext.xml");
-    StudentService studentService = (StudentService) applicationContext.getBean("studentServerB");
-    UserService userService = (UserService) applicationContext.getBean("userServiceB");
-//    System.out.println(studentService.findByID(99));
-    System.out.println(userService.findById(35));
+//    UserService userService = (UserService) applicationContext.getBean("userServiceB");
+
+    StudentService studentService = new RmiService().getStudentService();
+    System.out.println(studentService.findByID(99));
+//    System.out.println(userService.findById(35));
 
 } 
 

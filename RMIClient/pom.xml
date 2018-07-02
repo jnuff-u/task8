@@ -50,12 +50,23 @@
     </repository>
   </repositories>
 
-
   <dependencies>
+
+
 
     <!--第三方API start-->
 
+
+    <!--cluster4spring分布式 主要xml配置 -->
+    <dependency>
+      <groupId>com.cluster</groupId>
+      <artifactId>cluster4spring</artifactId>
+      <version>1.0.2</version>
+    </dependency>
+
+
     <!--第三方API上传jar包依赖（阿里 腾讯 等等）-->
+
 
     <!--  依赖冲突问题，先引入的先依赖，这里腾讯和荣联引入包冲突 先引入使用依赖  -->
     <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->

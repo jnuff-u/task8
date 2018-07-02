@@ -36,6 +36,9 @@ public class SendMailForOSS {
         final String apiUser = properties.getProperty("api_user");
         final String apiKey = properties.getProperty("api_key");
 
+//        final String rcpt_to = "137416943@qq.com";
+//        String subject = "验证邮件";
+//        String html = "22222";
 
         HttpPost httpPost = new HttpPost(url);
         CloseableHttpClient httpClient = HttpClients.createDefault();
